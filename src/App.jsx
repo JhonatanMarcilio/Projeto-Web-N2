@@ -27,6 +27,7 @@ function App() {
     <>
       <h1>Agenda de Contatos</h1>
       <ContactItem></ContactItem>
+      <ContactItem></ContactItem>
     </>
   );
 }
