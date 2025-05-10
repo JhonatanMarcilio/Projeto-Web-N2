@@ -6,7 +6,7 @@ function ContactItem({ contacts }) {
       <h2>Jhonatan Marcílio</h2>
       <p>📞 (69) 99310-0703</p>
       <p>📧 jhonatan.marcilio@alunos.afya.com.br</p>
-      <div className="botao">
+      <div className="btns">
         <button>Editar</button>
         <button>Deletar</button>
       </div>
