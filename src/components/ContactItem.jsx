@@ -1,6 +1,6 @@
 import "./ContactItem.css";
 
-function ContactItem({ name, phone, email }) {
+function ContactItem({ id, name, phone, email, onDelete }) {
   return (
     <div className="contact-card">
       <h2>{name}</h2>
@@ -8,7 +8,7 @@ function ContactItem({ name, phone, email }) {
       <p>📧 {email}</p>
       <div className="btns">
         <button>Editar</button>
-        <button>Deletar</button>
+        <button onClick={() => onDelete(id)}>Deletar</button>
       </div>
     </div>
   );

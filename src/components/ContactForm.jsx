@@ -47,10 +47,12 @@ function ContactForm({ onAdd, onClose }) {
         placeholder="E-Mail"
         required
       />
-      <button type="submit">Adicionar</button>
-      <button type="button" onClick={onClose}>
-        Cancelar
-      </button>
+      <div className="btn">
+        <button type="submit">Adicionar</button>
+        <button type="button" onClick={onClose}>
+          Cancelar
+        </button>
+      </div>
     </form>
   );
 }

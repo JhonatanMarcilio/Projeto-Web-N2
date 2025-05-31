@@ -23,6 +23,10 @@ body {
   align-self: center;
 }
 
-button {
-  //codigo
+.btnAdd {
+  border: none;
+  padding: 8px 0;
+  background-color: rgb(14, 136, 14);
+  color: white;
+  border-radius: 5px;
 }
