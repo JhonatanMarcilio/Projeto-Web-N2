@@ -1,19 +1,20 @@
 import { useState } from "react";
 import "./ContactForm.css";
 
-function ContactForm({ onAdd, onClose }) {
-  const [name, setName] = useState("");
-  const [phone, setPhone] = useState("");
-  const [email, setEmail] = useState("");
+function ContactForm({ onAdd, onClose, initialData = {} }) {
+  const [name, setName] = useState(initialData.name || "");
+  const [phone, setPhone] = useState(initialData.phone || "");
+  const [email, setEmail] = useState(initialData.email || "");
 
   // Evita que a pagina seja recarregada.
-  function handleSubmit(event) {
-    event.preventDefault();
+  function handleSubmit(e) {
+    e.preventDefault();
 
     const newContact = {
-      name: name,
-      phone: phone,
-      email: email,
+      id: initialData.id,
+      name,
+      phone,
+      email,
     };
 
     onAdd(newContact);
